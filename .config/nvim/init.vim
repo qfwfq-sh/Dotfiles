@@ -17,6 +17,7 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'goolord/alpha-nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'brianhuster/live-preview.nvim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -33,7 +34,9 @@ set tabstop=2
 set softtabstop=2
 set nohlsearch
 set updatetime=300
-
+set nocompatible
+filetype plugin on
+syntax on
 filetype plugin indent on
 syntax enable
 
